@@ -4,6 +4,8 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
+/* styles for the header section */
+
 h1 {
   font-family: "Futura PT", Arial, Helvetica, sans-serif;
   font-size: 52px;
@@ -65,7 +67,6 @@ h1 {
   width: 108px;
   aspect-ratio: 1;
   margin: auto;
-  z-index: 10;
   left: 96px;
   top: 78px;
   background-color: #F7F4F0;
@@ -99,4 +100,89 @@ h1 {
   font-size: 14px;
   text-align: left;
   color: #1D2B3F;
+}
+
+/* styles for the app overview section */
+
+.section-app-overview {
+  /* remove or change height when direction-column */
+  height: 518px;
+  max-width: 1500px;
+}
+
+.section-overview-textbox-1 {
+  width: 270px;
+  height: 173px;
+  margin: 40px 0 0 calc(100vw * 0.11);
+}
+
+.section-overview-text-1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-overview-text-2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.section-overview-ellipse-1 {
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(244, 233, 81, 0.50) 0%, #F4E951 100%);
+  width: 424.122px;
+  height: 479.442px;
+  transform: rotate(-120deg);
+  left: calc(100vw * 0.049);
+  bottom: 148.77px;
+}
+
+.section-overview-img-wrapper {
+  width: 470px;
+  height: 615px;
+  margin-top: -197px;
+}
+
+.section-overview-img-wrapper > img {
+  filter: drop-shadow(0 0 12px #00000016);
+}
+
+.section-overview-img-1 {
+  top: 72px;
+}
+
+.section-overview-img-3 {
+  top: 72px;
+}
+
+.section-overview-ellipse-2 {
+  border-radius: 50%;
+  width: 617.406px;
+  height: 697.937px;
+  transform: rotate(120deg);
+  border: 1px solid #DED5D5;
+  right: calc(100vw * 0.084);
+  bottom: 27.2px;
+}
+
+.section-overview-textbox-2 {
+  width: 270px;
+  height: 286px;
+  margin: 40px 0 0 calc(100vw * 0.043);
+}
+
+.section-overview-apple {
+  margin-bottom: 13.5px;
+}
+
+.flex-fill {
+  flex: 1 1 500px!important;
+}
+
+/* styles for the slider section */
+
+.section-app-slider {
+  border: 1px purple dashed;
+  height: 496px;
 }
