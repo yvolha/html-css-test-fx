@@ -49,7 +49,6 @@ h1 {
   border: 1px solid #E8E1E1;
   border-radius: 60px;
   position: relative;
-  box-sizing: content-box;
 }
 
 .title-bckg-content {
@@ -108,7 +107,8 @@ h1 {
 }
 
 .section-overview-textbox-1 {
-  width: 270px;
+  width: calc(100vw * 0.18);
+  max-width: 270px;
   height: 173px;
   margin: 40px 0 0 calc(100vw * 0.11);
 }
@@ -136,7 +136,8 @@ h1 {
 }
 
 .section-overview-img-wrapper {
-  width: 470px;
+  max-width: 470px;
+  width: calc(100vw * 0.313);;
   height: 615px;
   margin-top: -197px;
 }
@@ -164,9 +165,21 @@ h1 {
 }
 
 .section-overview-textbox-2 {
-  width: 270px;
+  width: calc(100vw * 0.18);
+  max-width: 270px;
   height: 286px;
   margin: 40px 0 0 calc(100vw * 0.043);
+}
+
+.section-overview-textbox-2::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  left: -340px;
+  width: 680px;
+  height: 697.937px;
+  z-index: -1;
+  background: url("./assets/images/outline-ellipse.png") no-repeat;
 }
 
 .section-overview-apple {
@@ -174,8 +187,8 @@ h1 {
 }
 
 .flex-fill {
-  flex: 1 1 500px!important;
-}
+  flex: 1 1 33%!important;
+} 
 
 /* styles for the slider section */
 
@@ -211,12 +224,13 @@ h1 {
 /* styles for the app advertisement text section */
 
 .section-ad {
-  border: 1px olive dashed;
   height: 877.49px;
+  max-width: 1500px;
 }
 
 .section-ad-download {
-  width: 465px;
+  width: calc(100vw * 0.31);
+  max-width: 470px;
   height: 305px;
   margin: 359.49px 0 0 calc(100vw * 0.11);
 }
@@ -224,14 +238,12 @@ h1 {
 .section-ad-download::before {
   content: "";
   position: absolute;
-  top: -68.14px;
-  left: -9.14px;
-  width: 617.406px;
+  top: -40px;
+  left: -43px;
+  width: 680px;
   height: 697.937px;
-  border-radius: 50%;
-  transform: rotate(120deg);
-  border: 1px solid #DED5D5;
   z-index: -1;
+  background: url("./assets/images/outline-ellipse.png") no-repeat;
 }
 
 .section-ad-download-text{
@@ -260,22 +272,23 @@ h1 {
 .section-ad-imgs::before {
   content: "";
   position: absolute;
-  top: -8.57px;
-  left: -92.63px;
-  width: 611.18px;
-  height: 690.899px;
-  border-radius: 50%;
-  transform: rotate(-120deg);
-  background: linear-gradient(180deg, rgba(0, 86, 255, 0.50) 0%, #0056FF 100%);
+  top: 20px;
+  left: -124px;
+  width: 690.899px;
+  height: 611.18px;
+  background: url("./assets/images/blue-ellipse.png") no-repeat;
 }
 
 .section-ad-imgs > img {
   filter: drop-shadow(0 0 12px #00000016);
  }
 
-/* styles for the footer */
+/* styles for the footer 
+* {
+  outline: 1px solid #f00 !important;
+}*/
 
 .footer {
-  border: 1px pink;
+  border: 1px red solid;
   height: 175px;
 }
