@@ -283,12 +283,25 @@ h1 {
   filter: drop-shadow(0 0 12px #00000016);
  }
 
-/* styles for the footer 
-* {
-  outline: 1px solid #f00 !important;
-}*/
+/* styles for the footer */
 
 .footer {
-  border: 1px red solid;
   height: 175px;
+}
+
+.footer-text-wrap {
+  max-width: 1170px;
+  width: 78%;
+  height: 60px;
+  border-radius: 9px;
+  background-color: #F8F2EC;
+  font-size: 22px;
+}
+
+.footer-highlight {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 112%;
+  color: #B68756;
+  text-decoration-line: underline;
 }
