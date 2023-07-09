@@ -18,7 +18,6 @@ h1 {
 
 .radial-bckg {
   background: radial-gradient(50.00% 81.67% at 50.00% 100.00%, rgba(246, 243, 239, 0.00) 0%, #F6F3EF 100%);
-  ;
   height: 690px;
 }
 
@@ -211,10 +210,68 @@ h1 {
 
 /* styles for the app advertisement text section */
 
-.section-app-ad {
+.section-ad {
   border: 1px olive dashed;
   height: 877.49px;
 }
+
+.section-ad-download {
+  width: 465px;
+  height: 305px;
+  margin: 359.49px 0 0 calc(100vw * 0.11);
+}
+
+.section-ad-download::before {
+  content: "";
+  position: absolute;
+  top: -68.14px;
+  left: -9.14px;
+  width: 617.406px;
+  height: 697.937px;
+  border-radius: 50%;
+  transform: rotate(120deg);
+  border: 1px solid #DED5D5;
+  z-index: -1;
+}
+
+.section-ad-download-text{
+  color: #2D3436;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.section-ad-qr-text {
+  width: 192px;
+  font-size: 14px;
+  color: #1D2B3F;
+}
+
+.section-ad-qr-wrapper {
+  width: 325px;
+}
+
+.section-ad-imgs {
+  width: 426px;
+  height: 669px;
+  margin: 104.49px calc(100vw * 0.19) 0 0;
+}
+
+.section-ad-imgs::before {
+  content: "";
+  position: absolute;
+  top: -8.57px;
+  left: -92.63px;
+  width: 611.18px;
+  height: 690.899px;
+  border-radius: 50%;
+  transform: rotate(-120deg);
+  background: linear-gradient(180deg, rgba(0, 86, 255, 0.50) 0%, #0056FF 100%);
+}
+
+.section-ad-imgs > img {
+  filter: drop-shadow(0 0 12px #00000016);
+ }
 
 /* styles for the footer */
 
