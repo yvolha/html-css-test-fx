@@ -24,7 +24,6 @@ h1 {
 
 .title-wrapper {
   width: 570px;
-  text-align: center;
 }
 
 .title-space {
@@ -98,7 +97,6 @@ h1 {
 .title-qr-text {
   width: 170px;
   font-size: 14px;
-  text-align: left;
   color: #1D2B3F;
 }
 
@@ -185,4 +183,42 @@ h1 {
 .section-app-slider {
   border: 1px purple dashed;
   height: 496px;
+}
+
+/* styles for the app download section */
+
+.section-app-download {
+  height: 378px;
+}
+
+.section-app-download-mt4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background-color: #F4F6F7;
+}
+
+.section-app-download-text {
+  width: 570px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.section-app-download-links {
+  gap: 29.69px;
+}
+
+/* styles for the app advertisement text section */
+
+.section-app-ad {
+  border: 1px olive dashed;
+  height: 877.49px;
+}
+
+/* styles for the footer */
+
+.footer {
+  border: 1px pink;
+  height: 175px;
 }
