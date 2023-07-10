@@ -192,9 +192,76 @@ h1 {
 
 /* styles for the slider section */
 
-.section-app-slider {
-  border: 1px purple dashed;
+.section-slider {
   height: 496px;
+}
+
+.section-slider-overflow {
+  height: 416px;
+}
+
+.section-slider-wrp {
+  margin-top: 46px;
+}
+
+.carousel-indicators {
+  top: -50px;
+}
+
+.carousel-indicators{
+   gap: 10px;
+}
+
+.carousel-indicators > button.active {
+  background-color: #B68756;
+  width: 18px;
+  height: 6px;
+  border-radius: 25% / 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #EBE5DE;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.carousel-inner > div {
+  width: 770px;
+  height: 370px;
+  background-color: #F6F3EF;
+  border-radius: 30px;
+}
+
+.carousel-item {
+  float: unset;
+  margin: 0 auto;
+}
+
+.carousel-item.active {
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  border: 1px solid #000;
+}
+
+.carousel-item > div > div {
+  width: 570px;
+}
+
+.section-slider-text {
+  width: calc(100vw * 0.18);
+}
+
+.section-slider-text-1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section-slider-text-2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 /* styles for the app download section */
